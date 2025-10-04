@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    border: 2px solid black;
+    width: 35vw;
+    padding: 40px;
+}
+.card h1{
+    margin: 15px 0px 25px 0px;
+}
+.inputBox{
+    display: flex;
+    position: relative;
+}
+.inputBox input{
+    padding: 18px 25px 18px 25px;
+    width: 100%;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #eaedee;
+    font-size: 16px;
+    outline: none;
+}
+.addBtn{
+    position: absolute;
+    right: 0px;
+    padding: 18px 25px 18px 25px;
+    background-color: #ff643b;
+    border-radius: 25px;
+    font-size: 15px;
+    color:#eaedee;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.tasks{
+    margin: 35px 0px;
+    font-size: 22px;
+}
+.tasks .task{
+    padding: 10px 0px;
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+    position: relative;
+}
+.task img{
+    width: 20px;
+    margin-right: 20px;
+}
+.task button{
+    border-radius: 30px;
+    color: grey;
+    border-style: none;
+    padding: 12px 16px 12px 16px;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+}
+.task button:hover{
+    cursor: pointer;
+    background-color: #eaedee;
+}
+.line-through{
+    text-decoration: line-through;
+}
