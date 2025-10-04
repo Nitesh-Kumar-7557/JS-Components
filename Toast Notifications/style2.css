@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f8efff;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+button{
+    padding: 10px 40px;
+    margin: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333333;
+    color: white;
+}
+.box{
+    width: 30vw;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.outerBox{
+    height: calc(40vh/3);
+    background-color: white;
+    width: 30vw;
+    position: relative;
+}
+
+.innerTopBox{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    height: calc(40vh/3 - 5px);
+    img{
+        width: 50px;
+    }
+}
+.innerBottomBox{
+    height: 5px;
+    position: absolute;
+    bottom: 0px;
+    width: 30vw;
+}
+
+.aniClass{
+    animation: toastLine 3s linear 0.7s;
+}
+.moveClass{
+    animation: moveIn 5s ease-in-out;
+
+}
+@keyframes moveIn{
+    0%{
+        transform: translateX(40vw);
+    }
+    25%{
+        transform: translateX(0vw);
+    }
+    75%{
+        transform: translateX(0vw);
+    }
+    100%{
+        transform: translateX(40vw);
+    }
+}
+@keyframes toastLine {
+    0%{
+        width: 30vw;
+    }
+    100%{
+        width: 0vw;
+    }
+}

@@ -1,0 +1,59 @@
+body{
+    background-color: #f8efff;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+button{
+    padding: 10px 40px;
+    margin: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333333;
+    color: white;
+}
+.noti{
+    background-color: white;
+    height: 80px;
+    width: 500px;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    animation: coming 1s linear;
+}
+.toast{
+    padding-top: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    gap: 40px;
+}
+.toast img{
+    width: 50px;
+}
+.bottom{
+    position: absolute;
+    bottom: 0px;
+    background-color: green;
+    height: 5px;
+    width: 500px;
+    animation: toastBottom 3s linear 1.2s;
+}
+@keyframes coming{
+    0%{
+        transform: translateX(600px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+@keyframes toastBottom{
+    0%{
+        width: 500px;
+    }
+    100%{
+        width: 0px;
+    }
+}

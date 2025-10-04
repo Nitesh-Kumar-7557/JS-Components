@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #031e4f;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainBox{
+    background-color: white;
+    padding: 25px;
+    width: 35vw;
+    border-radius: 15px;
+    h1{
+        margin: 20px 0px 20px 0px;
+    }
+}
+.quizCard .ques p{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 15px 0px 15px 0px;
+}
+.quizCard .ques .options .opt{
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0px 15px 0px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.opt:hover{
+    transition: all 0.3s;
+    background-color: #031c4b;
+    color: white;
+}
+.quizCard .nextBtn, .resetBtn{
+    background-color: #031c4b;
+    color: white;
+    border-radius: 7px;
+    padding: 10px 60px 10px 60px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.nextBtn:hover, .resetBtn:hover{
+    background-color: white;
+    color: #031c4b;
+    transition: all 0.3s;
+}
+.next{
+    text-align: center;
+}
+.scoreAtLast{
+    margin: 20px 0px 20px 0px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.correctOptStyle{
+    background-color: #9de0ba;
+}
+.wrongOptStyle{
+    background-color: #ff9c90;
+}
+.disabled{
+    pointer-events: none;
+    opacity: 0.8;
+}
+.hidden{
+    display: none;
+}
